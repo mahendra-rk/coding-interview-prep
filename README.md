@@ -1,3 +1,3 @@
 # coding-interview-prep
 
-<h4 align="center">Soltions to AlgoExpert Coding Questions, in python.</h4>
+<h4 align="center">Solutions to AlgoExpert coding questions, using python.</h4>
