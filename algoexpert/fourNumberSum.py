@@ -12,8 +12,7 @@ def fourNumberSum(array, targetSum):
 				print('match found in hashTable')
 				for sumPair in hashTable[diff]:
 					print(sumPair+[array[index], array[index2]])
-					result.append(sumPair+[array[index], array[index2]])
-					
+					result.append(sumPair+[array[index], array[index2]])		
 		for index3 in range(0,index):
 			print("leftNum")
 			#backward iteration
@@ -25,3 +24,4 @@ def fourNumberSum(array, targetSum):
 			print("hashTable %s", hashTable)
 		print("----")				
 	return result
+	
