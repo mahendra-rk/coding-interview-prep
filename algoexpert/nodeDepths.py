@@ -1,6 +1,6 @@
-def nodeDepths(root, multiplier=0):
+def nodeDepths(root, depth=0):
 	if root:
-		return multiplier + nodeDepths(root.left, multiplier+1) + nodeDepths(root.right, multiplier+1)
+		return depth + nodeDepths(root.left, depth+1) + nodeDepths(root.right, depth+1)
 	else:
 		return 0
 
