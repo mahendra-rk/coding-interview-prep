@@ -1,8 +1,7 @@
 def nodeDepths(root, depth=0):
 	if root:
 		return depth + nodeDepths(root.left, depth+1) + nodeDepths(root.right, depth+1)
-	else:
-		return 0
+	return 0
 
 # This is the class of the input binary tree.
 class BinaryTree:
@@ -10,4 +9,3 @@ class BinaryTree:
         self.value = value
         self.left = None
         self.right = None
-        
