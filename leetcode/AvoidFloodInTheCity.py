@@ -1,3 +1,5 @@
+#LeetCode 1488
+
 class Solution:
     def avoidFlood(self, rains: List[int]) -> List[int]:
         schedule_dict = collections.defaultdict(list)
