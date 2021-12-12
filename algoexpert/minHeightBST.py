@@ -1,14 +1,14 @@
 def minHeightBst(array):
-	return buildMinHeightBST(array, 0, len(array)-1)
-	
+    return buildMinHeightBST(array, 0, len(array)-1)
+    
 def buildMinHeightBST(array, left, right):
-	if right < left:
-		return None
+    if right < left:
+        return None
     root_indx = (left+right)//2
-	bst = BST(array[root_indx])
-	bst.left = buildMinHeightBST(array, left, root_indx-1)
-	bst.right = buildMinHeightBST(array, root_indx+1, right)
-	return bst
+    bst = BST(array[root_indx])
+    bst.left = buildMinHeightBST(array, left, root_indx-1)
+    bst.right = buildMinHeightBST(array, root_indx+1, right)
+    return bst
 
 class BST:
     def __init__(self, value):

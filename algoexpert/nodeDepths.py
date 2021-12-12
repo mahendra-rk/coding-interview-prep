@@ -1,7 +1,7 @@
 def nodeDepths(root, depth=0):
-	if root:
-		return depth + nodeDepths(root.left, depth+1) + nodeDepths(root.right, depth+1)
-	return 0
+    if root:
+        return depth + nodeDepths(root.left, depth+1) + nodeDepths(root.right, depth+1)
+    return 0
 
 def treeDepth(root, depth=-1):
     #considering root at depth 0; if root is at depth 1, then change to depth=0
